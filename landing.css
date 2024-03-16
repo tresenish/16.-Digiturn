@@ -214,7 +214,17 @@ span.LDPF {
     color: white;
     background-image: linear-gradient(var(--blue2), var(--blue5));
 }
-
+@media screen and (max-width: 600px) {
+    h1.LDPF{
+        font-size: 5rem;
+    }
+    h2.LDPF{
+        font-size: 2rem;
+    }
+    h3.LDPF{
+        font-size: 1rem;
+    }
+}
 /* Scroller */
 .imgScroll {
     height: auto;
