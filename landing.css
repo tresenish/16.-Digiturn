@@ -28,47 +28,147 @@ body{
     text-align: center;
 }
 /* NAVIGATION */
-nav.nav{
+
+nav.nav {
     position: absolute;
-    top:0;
-    left:0;
-    right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 7rem;
     padding: 1rem;
     margin: 1rem;
-
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-h3#logo{
+
+h3#logo {
+    position: absolute;
+    left:5vw;
     font-size: 3rem;
-    margin: 0 0 0 5vw;
     line-height: 7rem;
 }
-ul.nav{
+
+ul.nav-menu {
     list-style: none;
     display: flex;
     padding: 0;
+    margin: 0;
+    align-items: center;
 }
-li.nav-item{
-    margin: 1.5rem;
-}
-a.nav-link{
-    text-decoration: 0;
-    font-size: 1.4rem;
-    color: black;
-}
-#meetWithUs{
-    padding: 1rem;
-    margin: 1rem 5vw 1rem 1rem;
 
+li.nav-item {
+    margin: 0 1.5rem;
+}
+li:last-child {
+    position: absolute;
+    right:5vw;
+}
+
+a.nav-link {
+    text-decoration: 0;
+    font-size: 1rem;
+    color: black;
+    line-height: 2rem;
+}
+
+#meetWithUs {
+    padding: 1rem;
+    margin-left: 1.5rem;
     border-radius: 2rem;
     border: 2px solid var(--blue3);
     font-weight: 600;
     font-size: 1.2rem;
     color: var(--blue3);
+    /* line-height: 7rem; */
 }
+/* Existing CSS */
+
+@media screen and (max-width: 600px) {
+    #meetWithUs {
+        display: block;
+    }
+    ul.nav-menu {
+        display: none;
+        
+    }
+    ul.is-visible {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        margin-right: 5rem;
+        width: 100%;
+        background-color: #fff;
+        /* padding: 1rem; */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .nav-item {
+        width: 100%;
+        margin: 0;
+    }
+    li.nav-item {
+        margin:0;
+    }
+    li:last-child {
+        position: static;
+    }
+    
+    #dropdown-button {
+        display: block;
+        position: absolute;
+        right: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .nav-menu:focus{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    /* .nav-menu:focus-within {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    } */
+}
+
+@media screen and (min-width: 601px) {
+    #meetWithUs {
+        display: block;
+    }
+    .nav-menu {
+        display: flex;
+    }
+    #dropdown-button {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+     html {
+        font-size: 12px;
+    }
+}
+
+
  /* Launching Digital Products Fast - SECTION  */
 
 section.LDPF {
@@ -177,7 +277,11 @@ to {
     transform: translate(calc(-50% - 0.5rem));
 }
 }
-
+@media screen and (max-width: 600px) {
+    .imgScroll {
+        margin-left: 2rem;
+    }
+}
 /* 3X - SECTION */
 
 
@@ -246,70 +350,3 @@ div.card3x {
     font-size: 1.5rem;
     margin-right: 0.5rem;
 }
-
-/* 
-section.section3x {
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-
-}
-
-#orbits {
-    position: relative;
-    width: 60%;
-}
-
-h1.section3x {
-    position: absolute;
-    background-image: linear-gradient(var(--blue6) 0%, var(--blue4) 50%, var(--blue6) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-    font-size: 15rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-100%, -30%);
-}
-
-img.section3x {
-    position: absolute;
-    opacity: 0.3;
-    top: 50%;
-    left: 50%;
-    transform: translate(-80%, -10%);
-}
-
-div.cards3x {
-    position: relative;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(50%, 50%); 
-    margin: 2rem;
-}
-
-div.card3x {
-    display: flex;
-    border-radius: 1rem;
-    border: 1px solid #D9D9D9;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    align-items: center;
-    font-weight: 400;
-    font-size: 1.5rem;
-    width: 80%;
-}
-
-.material-symbols-outlined {
-    color: var(--blue3);
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-} */
