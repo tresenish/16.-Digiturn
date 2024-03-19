@@ -26,6 +26,7 @@ html{
     
 body{
     text-align: center;
+    background-image: url(./src/background.webp);
 }
 /* NAVIGATION */
 
@@ -90,6 +91,7 @@ a.nav-link {
     #meetWithUs {
         display: block;
         padding: 0.5rem;
+        margin: 0;
     }
     ul.nav-menu {
         display: none;
@@ -101,12 +103,11 @@ a.nav-link {
         align-items: flex-start;
         position: absolute;
         top: 7rem;
-        left: 0;
-        /* margin-right: 5rem; */
-        width: 100%;
-        background-color: #fff;
-        /* padding: 1rem; */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        left: -3vw;
+        width: 100vw;
+        background-color: #f5f4f1;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
     }
     .nav-item {
         width: 100%;
@@ -300,7 +301,7 @@ section.section3x {
     position: relative;
     width: 50%;
     aspect-ratio: 1/1;
-    background: radial-gradient(circle, rgba(27,0,255,0.25) 0%, rgba(255,255,255,0.5) 45%);
+    background: radial-gradient(circle, rgba(27,0,255,0.25) 0%, rgba(245,244,241,0.5) 45%);
 }
 
 #orbits img.section3x {
@@ -347,6 +348,7 @@ div.card3x {
     border-radius: 1.5rem;
     align-items: center;
     font-size: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .material-symbols-outlined {
@@ -363,9 +365,11 @@ div.card3x {
 }
 @media screen and (max-width: 750px) {
     section.section3x {
-
+        width: 80%;
         height: auto;
         display: block;
+        margin: 6rem auto 0 auto;
+
     }
 
     #orbits {
@@ -386,6 +390,11 @@ div.card3x {
         width: 100%;
         margin-top: 5rem;
         /* background-color: #6796E9; */
+    }
+}
+@media screen and (max-width: 400px) {
+    section.section3x {
+        width: 85%;
     }
 }
 
@@ -453,6 +462,8 @@ li.blacknBlueDiv{
 #blueArrow{
     position: absolute;
     bottom: 5rem;
+    width: 7rem;
+    height: auto;
     transform: translate(-110%,90%);
 }
 #freeConsultation{
@@ -465,10 +476,33 @@ li.blacknBlueDiv{
     margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
+    section.DSF{
+        margin: 6rem auto 0 auto;
+    }
+    div.blueHeadings{
+        margin: 3rem;
+    }
+    h2.DSF{
+        margin: 1rem;
+    }
+    p.DSF{
+        font-size: 1.5rem;
+        width: 90%;
+        margin: 1rem auto;
+    }
     div#blacknBlueDiv{
+        width: 90%;
         flex-direction: column;
         height: auto;
     }
+}
+
+@media screen and (max-width: 400px) {
+    section.DSF {
+        margin: 4rem auto 0 auto;
+        width: 90%;
+    }
+    
 }
 /* Services - SECTION */
 section.services{
@@ -507,6 +541,8 @@ div.grid{
     border: 1px solid lightgrey;
     border-radius: 1.5rem;
     padding: 1rem 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
 }
 h3.grid{
     font-size: 1.5rem;
