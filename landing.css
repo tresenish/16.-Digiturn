@@ -173,12 +173,12 @@ section.LDPF {
 h1.LDPF{
     font-size: 7rem;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
 }
 h2.LDPF{
     font-size: 3rem;
     font-weight: 500;
-    margin-top: 0;
+    margin-bottom: 4rem;
 }
 h3.LDPF {
     display: inline-flex;
@@ -289,63 +289,61 @@ to {
 
 
 section.section3x {
-    position: relative;
-    margin: 8rem auto;
+    width: 60%;
+    height: 30vw;
+    margin: 10rem auto 0 auto;
     display: flex;
-    justify-content: center;
-    width: 80%;
-
+    gap: 80px;
 }
 
 #orbits {
     position: relative;
-    width: 40%;
+    width: 50%;
+    height: auto;
+}
+
+#orbits img.section3x {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    margin: 0  auto;
+
 }
 
 h1.section3x {
     position: absolute;
+    left: 15vw;
+    top: 15vw;
+    transform: translate(-50%,-50%);
+    margin: 0;
+
+    font-size: 10vw;
     background-image: linear-gradient(var(--blue6) 0%, var(--blue4) 50%, var(--blue6) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    display: inline-block;
-    font-size: 15rem;
-
-    left: 50%;
-    transform: translate(-100%, -30%);
 }
 
-img.section3x {
-    position: absolute;
-    opacity: 0.3;
-    
-    left: 50%;
-    transform: translate(-80%, -10%);
-}
 
-div.cards3x {
-    position: relative;
-    width: 50%;
+
+#cards3x {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(10%, 100%); 
-    margin: 2rem;
+    width: 50%;
+    /* background-color: #6796E9; */
+    justify-content: space-evenly;
+    /* align-items: center; */
 }
 
 div.card3x {
     display: flex;
-    border-radius: 1rem;
-    border: 1px solid #D9D9D9;
+    margin: 10px;
     padding: 2rem;
-    margin: 3rem;
+    border: 1px solid gray;
+    border-radius: 1.5rem;
     align-items: center;
-    font-weight: 400;
     font-size: 1.5rem;
-    width: 80%;
 }
 
 .material-symbols-outlined {
@@ -353,3 +351,54 @@ div.card3x {
     font-size: 1.5rem;
     margin-right: 0.5rem;
 }
+
+
+/* @media screen and (max-width: 600px) {
+    section.section3x {
+        display: block;
+    }
+    #orbits {
+        width: 100%;
+        max-height: 100%;
+        min-height: 90vw;
+
+    }
+    img.section3x {
+        left: 0%;
+        transform: translate(0, 0); 
+    }
+    h1.section3x {
+        position: absolute;
+        margin: 0 0;
+        top: 45%;
+        left: 0%;
+        transform: translate(50%, -50%);
+        font-size: 10rem;
+
+    }
+    div.cards3x {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(10%, 100%); 
+        margin: 2rem;
+        background-color: #3581FA;
+    }
+    
+    div.card3x {
+        display: flex;
+        border-radius: 1rem;
+        border: 1px solid #D9D9D9;
+        padding: 2vh 2vw;
+    
+        margin: 3rem;
+        align-items: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    
+} */
