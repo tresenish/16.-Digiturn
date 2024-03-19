@@ -531,11 +531,22 @@ img.img-grid{
 
 }
 @media screen and (max-width: 750px) {
+    
     #servicesGrid{
         grid-template: 1fr 0.8fr 0.8fr / 1fr 1fr;
         grid-template-areas: 
         "grid1 grid1" 
         "grid2 grid3"
         "grid4 grid5";
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    #servicesGrid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.grid{
+        height: auto;
     }
 }
