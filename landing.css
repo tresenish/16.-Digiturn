@@ -664,7 +664,13 @@ img#rocket{
     position: absolute;
     right: 0;
 }
-
+@media screen and (max-width: 1000px) {
+    img#rocketTrail{
+        top: 2.5rem;
+        right: 1.5rem;
+    
+    }
+}
 @media screen and (max-width: 750px) {
     section.HIBP{
         width: 100%;
