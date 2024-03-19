@@ -60,7 +60,7 @@ ul.nav-menu {
 li.nav-item {
     margin: 0 1.5rem;
 }
-li:last-child {
+li.nav-item:last-child {
     position: absolute;
     right:5vw;
 }
@@ -116,7 +116,7 @@ a.nav-link {
     li.nav-item {
         margin:0;
     }
-    li:last-child {
+    li.nav-item:last-child {
         position: static;
     }
     
@@ -283,7 +283,7 @@ to {
 }
 @media screen and (max-width: 600px) {
     .imgScroll {
-        margin-left: 2rem;
+        margin-left: 0.5rem;
     }
 }
 /* 3X - SECTION */
@@ -301,6 +301,7 @@ section.section3x {
     position: relative;
     width: 50%;
     aspect-ratio: 1/1;
+    background: radial-gradient(circle, rgba(27,0,255,0.25) 0%, rgba(255,255,255,0.5) 45%);
 }
 
 #orbits img.section3x {
@@ -320,7 +321,8 @@ h1.section3x {
     margin: 0;
 
     font-size: 10vw;
-    background-image: linear-gradient(var(--blue6) 0%, var(--blue4) 50%, var(--blue6) 100%);
+    background-image: linear-gradient(to right, var(--blue6) 0%, var(--blue4) 50%, var(--blue6) 100%);
+
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -375,7 +377,7 @@ div.card3x {
     h1.section3x {
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-40%);
         font-size: 20vw;
     }
 
@@ -387,52 +389,70 @@ div.card3x {
         /* background-color: #6796E9; */
     }
 }
-/* @media screen and (max-width: 600px) {
-    section.section3x {
-        display: block;
-    }
-    #orbits {
-        width: 100%;
-        max-height: 100%;
-        min-height: 90vw;
 
-    }
-    img.section3x {
-        left: 0%;
-        transform: translate(0, 0); 
-    }
-    h1.section3x {
-        position: absolute;
-        margin: 0 0;
-        top: 45%;
-        left: 0%;
-        transform: translate(50%, -50%);
-        font-size: 10rem;
+/* Developing Solutions For - SECTION */
+section.DSF{
+    width: 80%;
+    margin: 10rem auto 0 auto;
+    text-align: center;
+}
+h3.DSF{
+    font-size: 2rem;
+}
+div.blueHeadings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5rem;
+}
+h2.DSF{
+    margin: 2rem;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, var(--blue6) 0%, var(--blue4) 50%, var(--blue6) 100%);
 
-    }
-    div.cards3x {
-        width: 100%;
-        display: flex;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+p.DSF{
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 1rem auto;
+}
+div#blacknBlueDiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 17rem;
+    padding: 1rem;
+    margin: 8rem auto;
+    border-radius: 1.5rem;
+    background: linear-gradient(to right, #000000 0%, #2A2E33 50%, #405066 100%);
+    
+    color: white;
+}
+h2.blacknBlueDiv{
+    font-size: 3rem;
+    background-image: linear-gradient(to right, var(--blue6) 0%, var(--blue4) 50%, var(--blue6) 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+ul.blacknBlueDiv{
+    list-style: none;
+}
+li.blacknBlueDiv{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+@media screen and (max-width: 750px) {
+    div#blacknBlueDiv{
         flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(10%, 100%); 
-        margin: 2rem;
-        background-color: #3581FA;
+        height: auto;
     }
-    
-    div.card3x {
-        display: flex;
-        border-radius: 1rem;
-        border: 1px solid #D9D9D9;
-        padding: 2vh 2vw;
-    
-        margin: 3rem;
-        align-items: center;
-        font-weight: 400;
-        font-size: 1.5rem;
-    }
-    
-} */
+}
