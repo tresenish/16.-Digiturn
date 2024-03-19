@@ -173,12 +173,13 @@ section.LDPF {
 h1.LDPF{
     font-size: 7rem;
     font-weight: 700;
-    margin-bottom: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 6rem;
 }
 h2.LDPF{
     font-size: 3rem;
     font-weight: 500;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 h3.LDPF {
     display: inline-flex;
@@ -315,7 +316,7 @@ h1.section3x {
     position: absolute;
     left: 15vw;
     top: 15vw;
-    transform: translate(-50%,-50%);
+    transform: translate(-60%,-60%);
     margin: 0;
 
     font-size: 10vw;
@@ -352,7 +353,39 @@ div.card3x {
     margin-right: 0.5rem;
 }
 
+@media screen and (max-width: 1000px) {
+    h1.section3x {
+        transform: translate(-70%,-70%);
+    }
+    
+}
+@media screen and (max-width: 750px) {
+    section.section3x {
 
+        height: auto;
+        display: block;
+    }
+
+    #orbits {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    h1.section3x {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 20vw;
+    }
+
+
+
+    #cards3x {
+        width: 100%;
+        margin-top: 5rem;
+        /* background-color: #6796E9; */
+    }
+}
 /* @media screen and (max-width: 600px) {
     section.section3x {
         display: block;
