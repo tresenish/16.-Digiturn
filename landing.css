@@ -300,7 +300,7 @@ section.section3x {
 #orbits {
     position: relative;
     width: 50%;
-    height: auto;
+    aspect-ratio: 1/1;
 }
 
 #orbits img.section3x {
@@ -314,9 +314,9 @@ section.section3x {
 
 h1.section3x {
     position: absolute;
-    left: 15vw;
-    top: 15vw;
-    transform: translate(-60%,-60%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-40%);
     margin: 0;
 
     font-size: 10vw;
@@ -340,6 +340,7 @@ h1.section3x {
 div.card3x {
     display: flex;
     margin: 10px;
+    
     padding: 2rem;
     border: 1px solid gray;
     border-radius: 1.5rem;
@@ -355,7 +356,7 @@ div.card3x {
 
 @media screen and (max-width: 1000px) {
     h1.section3x {
-        transform: translate(-70%,-70%);
+        /* transform: translate(-50%,-50%); */
     }
     
 }
