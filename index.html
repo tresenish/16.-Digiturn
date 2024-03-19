@@ -18,7 +18,7 @@
             <h3 id="logo"><a style="text-decoration:none;color:black;" href="index.html">digiturn</a></h3>
             <ul class="nav-menu" id="nav-ul-id">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Services</a>
+                    <a class="nav-link active" href="#idSevice">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
@@ -62,7 +62,6 @@
         </div>
     </section>
     <!-- 3X - SECTION -->
-
     <section class="section3x">
         <div id="orbits">
             <h1 class="section3x">3X</h1>
@@ -102,10 +101,10 @@
     <section class="DSF">
         <h3 class="DSF">Developing Solutions For</h3>
         <div class="blueHeadings">
-            <h2 class="DSF">STARTUPS</h2>
-            <h2 class="DSF">INVESTORS</h2>
-            <h2 class="DSF">SMBs</h2>
-            <h2 class="DSF">AGENCIES</h2>
+            <a class="DSF" href="#"><h2 class="DSF">STARTUPS</h2></a>
+            <a class="DSF" href="#"><h2 class="DSF">INVESTORS</h2></a>
+            <a class="DSF" href="#"><h2 class="DSF">SMBs</h2></a>
+            <a class="DSF" href="#"><h2 class="DSF">AGENCIES</h2></a>
         </div>
         <p class="DSF">
             Empower startups to rapidly build, iterate, and refine products 
@@ -130,7 +129,7 @@
     </section>
     <!-- Services - SECTION -->
 
-    <section class="services">
+    <section id="idSevice"class="services">
         <h3 class="services">Services</h3>
         <div id="servicesGrid">
 
@@ -186,7 +185,40 @@
         </div>
     </section>
 
-
+    <!-- How ideas become products - SECTION -->
+    <section class="HIBP">
+        <h3 class="HIBP">How ideas become products</h3>
+        <div id="flexHIBP">
+            <div class="HIBP">
+                <h2 class="HIBP blue">1st stage</h2>
+                <div class="circle o1"></div>
+                <h2 class="HIBP black">Discovery</h2>
+                <p class="HIBP">Getting on a call, discussing the idea on the high-level</p>
+            </div>
+            <div class="HIBP">
+                <h2 class="HIBP blue">2nd stage</h2>
+                <div class="circle o2"></div>
+                <h2 class="HIBP black">Prototyping</h2>
+                <p class="HIBP">We research and create a prototype of the idea, then review it together with a customer</p>
+            </div>
+            <div class="HIBP">
+                <h2 class="HIBP blue">3rd stage</h2>
+                <div class="circle o3"></div>
+                <h2 class="HIBP black">Design</h2>
+                <p class="HIBP">Designing the solution using design-sprint approach to fulfill the idea</p>
+            </div>
+            <div class="HIBP last">
+                <div id="rocketContainer">
+                    <img id="rocketTrail" src="./src/rocketTrail.png" alt="">
+                    <img id="rocket" src="./src/rocket.png" alt="">
+                </div>
+                <h2 class="HIBP blue">Final stage</h2>
+                <div class="circle o4"></div>
+                <h2 class="HIBP black">Turning into product</h2>
+                <p class="HIBP">Crafting the product with low-code and no-code tools</p>
+            </div>
+        </div>
+    </section>
     <script src="./landing.js"></script>
 </body>
 </html>

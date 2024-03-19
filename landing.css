@@ -14,7 +14,7 @@
 html{
     margin: 0;
     padding: 0;
-
+    scroll-behavior: smooth;
     font-family: "League Spartan", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -415,13 +415,18 @@ div.blueHeadings{
     margin: 5rem;
 }
 h2.DSF{
-    margin: 2rem;
+    margin: 0;
     font-size: 3rem;
     background-image: linear-gradient(to right, var(--blue6) 0%, var(--blue4) 50%, var(--blue6) 100%);
 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+a.DSF{
+    margin: 2rem 2rem;
+    text-decoration: none;
+    padding: 0;
 }
 p.DSF{
     font-size: 1.5rem;
@@ -584,5 +589,89 @@ img.img-grid{
     }
     div.grid{
         height: auto;
+    }
+}
+/* How ideas become products - SECTION */
+section.HIBP{
+    margin: 8rem auto 0 auto;
+    width: 80%;
+}
+h3.HIBP{
+    font-size: 2rem;
+}
+div#flexHIBP{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    position: relative;
+    top: 4rem;
+}
+div.HIBP{
+    position: relative;
+    max-width: 100%;
+    margin: 2rem ;
+
+    border-radius: 1.5rem;
+    text-align: left;
+}
+h2.HIBP.blue{
+    position: absolute;
+    top: -5rem;
+    font-weight: 300;
+    color: var(--blue6);
+    transform: rotate(-30deg);
+}
+h2.HIBP.black{
+    font-weight: 500;
+
+}
+div.circle{
+    width: 2rem;
+    aspect-ratio: 1 / 1 ;
+    border-radius: 10rem;
+}
+div.circle.o1{
+    background-image: linear-gradient(to right, var(--blue6), var(--blue5));
+}
+div.circle.o2{
+    background-image: linear-gradient(to right, var(--blue5), var(--blue3));
+}
+div.circle.o3{
+    background-image: linear-gradient(to right, var(--blue3), var(--blue1));
+}
+div.circle.o4{
+    background-image: linear-gradient(to right, var(--blue1), var(--light-pink));
+}
+#rocketContainer{
+    position: absolute;
+    width: 12rem;
+    height: auto;
+    left: 1rem;
+    top: -12rem;
+    aspect-ratio: 1/0.9;
+    /* background-color: #2569C8; */
+}
+img#rocketTrail{
+    position: absolute;
+    width: 10rem;
+    height: auto;
+    top: 2rem;
+    right: 1rem;
+
+}
+img#rocket{
+    top: -0.5rem;
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (max-width: 750px) {
+    section.HIBP{
+        width: 100%;
+    }
+    div#flexHIBP{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 8rem;
     }
 }
