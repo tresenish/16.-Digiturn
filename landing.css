@@ -80,7 +80,6 @@ a.nav-link {
     font-weight: 600;
     font-size: 1.2rem;
     color: var(--blue3);
-    /* line-height: 7rem; */
 }
 /* Existing CSS */
 
@@ -392,6 +391,7 @@ div.card3x {
 
 /* Developing Solutions For - SECTION */
 section.DSF{
+    position: relative;
     width: 80%;
     margin: 10rem auto 0 auto;
     text-align: center;
@@ -426,7 +426,7 @@ div#blacknBlueDiv{
     width: 80%;
     height: 17rem;
     padding: 1rem;
-    margin: 8rem auto;
+    margin: 8rem auto 6rem auto;
     border-radius: 1.5rem;
     background: linear-gradient(to right, #000000 0%, #2A2E33 50%, #405066 100%);
     
@@ -449,6 +449,20 @@ li.blacknBlueDiv{
     align-items: center;
     font-size: 1.5rem;
     margin: 1rem;
+}
+#blueArrow{
+    position: absolute;
+    bottom: 5rem;
+    transform: translate(-100%,50%);
+}
+#freeConsultation{
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid var(--blue3);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--blue3);
+    margin: 0 auto;
 }
 @media screen and (max-width: 750px) {
     div#blacknBlueDiv{
