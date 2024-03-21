@@ -18,12 +18,24 @@ function addAnimation() {
 }
 
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const dropdownButton = document.getElementById('dropdown-button');
-        const navMenu = document.getElementById('nav-ul-id');
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownButton = document.getElementById('dropdown-button');
+    const navMenu = document.getElementById('nav-ul-id');
 
-        // Toggle the 'is-visible' class on click
-        dropdownButton.addEventListener('click', function() {
-            navMenu.classList.toggle('is-visible');
-        });
+    // Toggle the 'is-visible' class on click
+    dropdownButton.addEventListener('click', function() {
+        navMenu.classList.toggle('is-visible');
     });
+});
+
+
+window.addEventListener('scroll', function() {
+  const polygons = document.querySelectorAll('.pol.section3x');
+  const scrollTop = document.documentElement.scrollTop;
+  polygons.forEach((polygon, index) => {
+
+    const speedMultiplier = (index + 1) * 3;
+    const rotation = (scrollTop / speedMultiplier) % 450;
+    polygon.style.transform = `rotate(${rotation}deg)`;
+  });
+});
