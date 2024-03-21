@@ -35,7 +35,7 @@ window.addEventListener('scroll', function() {
   polygons.forEach((polygon, index) => {
 
     const speedMultiplier = (index + 1) * 3;
-    const rotation = (scrollTop / speedMultiplier) % 450;
+    const rotation = (scrollTop / speedMultiplier) % 360;
     polygon.style.transform = `rotate(${rotation}deg)`;
   });
 });

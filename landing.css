@@ -28,9 +28,7 @@ body{
     text-align: center;
     background-image: url(./src/background.webp);
 }
-.blueButton:hover{
-    background-color: var(--blue3);
-}
+
 /* NAVIGATION */
 
 nav.nav {
@@ -84,6 +82,14 @@ a.nav-link {
     font-weight: 600;
     font-size: 1.2rem;
     color: var(--blue3);
+}
+#meetWithUs:hover{
+    color: white;
+    background-color: var(--blue3);
+}
+#meetWithUs:active{
+    color: white;
+    background-color: var(--blue2);
 }
 /* Existing CSS */
 
@@ -189,10 +195,10 @@ h2.LDPF{
 }
 h3.LDPF {
     display: inline-flex;
+    justify-items: baseline;
     align-items: center;
     margin-bottom: 3rem;
     border-radius: 2rem;
-    line-height: 1;
     padding: 0.5rem 3rem 0.5rem 0.5rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -200,16 +206,16 @@ h3.LDPF {
 }
 
 span.LDPF {
-    display: inline-flex;
-    align-items: center;
     border-radius: 2rem;
-    line-height: 1;
     padding: 0.5rem 2.5rem;
     margin-right: 2rem;
     font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 600;
     color: white;
     background-image: linear-gradient(var(--blue2), var(--blue5));
 }
+
 @media screen and (max-width: 600px) {
     h1.LDPF{
         font-size: 5rem;
@@ -484,6 +490,14 @@ li.blacknBlueDiv{
     color: var(--blue3);
     margin: 0 auto;
 }
+#freeConsultation:hover{
+    color: white;
+    background-color: var(--blue3);
+}
+#freeConsultation:active{
+    color: white;
+    background-color: var(--blue2);
+}
 @media screen and (max-width: 750px) {
     section.DSF{
         margin: 6rem auto 0 auto;
@@ -581,13 +595,17 @@ div.img-grid{
 }
 img.img-grid{
     width: auto;
-    height: 2rem;
+    height: 1.4rem;
     border: 1px solid lightgrey;
     border-radius: 1.5rem;
     margin: 0.5rem;
     padding: 1.3rem;
     background-color: rgba(255, 255, 255, 0.45);
+    filter: grayscale(0.9);
 
+}
+img.img-grid:hover{
+    filter: grayscale(0);
 
 }
 @media screen and (max-width: 750px) {
