@@ -28,14 +28,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+// Transform-animation
 window.addEventListener('scroll', function() {
   const polygons = document.querySelectorAll('.pol.section3x');
   const scrollTop = document.documentElement.scrollTop;
   polygons.forEach((polygon, index) => {
 
     const speedMultiplier = (index + 1) * 3;
-    const rotation = (scrollTop / speedMultiplier) % 360;
-    polygon.style.transform = `rotate(${rotation}deg)`;
+    const rotation = (scrollTop / speedMultiplier) % 720;
+
+    polygon.style.transform = `translate(-0%,-50%) rotate(${rotation}deg)`;
   });
 });

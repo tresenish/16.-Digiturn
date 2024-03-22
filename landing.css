@@ -303,54 +303,46 @@ to {
 
 
 section.section3x {
+    display: flex;
+    justify-content: center;
     width: 60%;
-    height: 30vw;
-    margin: 10rem auto 0 auto;
+    height: 30rem;
+    margin: 8rem auto 0 auto !important;
     display: flex;
     gap: 80px;
-    transition: transform 0.5s ease;
 }
-
 #orbits {
     position: relative;
-    width: 50%;
-    aspect-ratio: 1/1;
+    width: 30rem;
     background: radial-gradient(circle, rgba(27,0,255,0.25) 0%, rgba(245,244,241,0.5) 45%);
 }
-
 #orbits img.section3x {
     position: absolute;
+    right: 0;
+    top: 50%;
     width: 100%;
-    height: auto;
-    left: 0;
-    margin: 0  auto;
-
+    aspect-ratio: 1/1;
+    transition: transform 0.2s ease;
 }
-
 h1.section3x {
     position: absolute;
-    left: 50%;
+    right: 50%;
     top: 50%;
-    transform: translate(-50%,-40%);
+    transform: translate(50%,-40%);
     margin: 0;
 
-    font-size: 10vw;
+    font-size: clamp(5rem, 10vw, 10rem);
     background-image: linear-gradient(to right, var(--blue6) 0%, var(--blue4) 50%, var(--blue6) 100%);
 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-
-
-
 #cards3x {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    /* background-color: #6796E9; */
+    width: 30rem;
     justify-content: space-evenly;
-    /* align-items: center; */
 }
 
 div.card3x {
@@ -386,10 +378,12 @@ div.card3x {
         aspect-ratio: 1 / 1;
     }
 
+    #orbits img.section3x {
+        position: absolute;
+        right: 0%;
+    }
+
     h1.section3x {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-40%);
         font-size: 20vw;
     }
 
