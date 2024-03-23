@@ -430,6 +430,15 @@ a.DSF{
     margin: 2rem 2rem;
     text-decoration: none;
     padding: 0;
+    cursor: pointer;
+}
+a.DSF.active{
+    background-image: linear-gradient(to left, var(--blue6) 0%, var(--blue3) 100%);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 5px;
+    display: inline-block;
+    padding-bottom: 3px;
 }
 p.DSF{
     font-size: 1.5rem;
@@ -512,6 +521,9 @@ li.blacknBlueDiv{
         width: 90%;
         flex-direction: column;
         height: auto;
+    }
+    h2.blacknBlueDiv{
+        text-align: center;
     }
 }
 
