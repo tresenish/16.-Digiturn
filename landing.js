@@ -79,18 +79,3 @@ anchorElements.forEach(anchor => {
     updateActiveClass(this.id);
   });
 });
-
-
-
-  // const pElement = document.getElementById('pBlue');
-  // function updateText(text) {
-  //   pElement.innerHTML = text;
-  // }
-  // document.getElementById('startupsBlue').addEventListener('click', function() {
-  // });
-  // document.getElementById('investorsBlue').addEventListener('click', function() {
-  // });
-  // document.getElementById('sbmsBlue').addEventListener('click', function() {
-  // });
-  // document.getElementById('agenciesBlue').addEventListener('click', function() {
-  // });
