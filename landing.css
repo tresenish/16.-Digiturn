@@ -451,11 +451,13 @@ div.card3x {
 section.DSF{
     position: relative;
     width: 80%;
-    margin: 10rem auto 0 auto;
+    margin: 0 auto 0 auto;
     text-align: center;
 }
 h3.DSF{
     font-size: 2rem;
+    margin-top: 140px;
+
 }
 div.blueHeadings{
     display: flex;
@@ -603,10 +605,12 @@ li.blacknBlueDiv{
 section.services{
     text-align: center;
     width: 80%;
-    margin: 7rem auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 h3.services{
     font-size: 2rem;
+    margin-top: 140px;
+
 }
 #servicesGrid{
     display: grid;
@@ -711,11 +715,13 @@ img.img-grid:hover{
 }
 /* How ideas become products - SECTION */
 section.HIBP{
-    margin: 8rem auto 0 auto;
+    margin: 0 auto 0 auto;
     width: 80%;
 }
 h3.HIBP{
     font-size: 2rem;
+    margin-top: 140px;
+
 }
 div#flexHIBP{
     display: grid;
@@ -802,35 +808,62 @@ img#rocket{
 /* Pricing - SECTION */
 section.price{
     width: 80%;
-    margin: 8rem auto 8rem auto;
+    margin: 0 auto 0 auto;
 }
 h3.price{
+    margin-top: 140px;
     font-size: 2rem;
 }
 div.priceDivs{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0;
     margin-top: 3rem;
 }
 div.priceCard{
     position: relative;
     border-radius: 1.5rem;
-    width: 30%;
-    height: auto;
-    height: 25rem;
+    width: 25%;
+    min-width: 150px;
+    height: 31rem;
+    margin: 1.5rem 0;
     transition-duration: 300ms;
 }
-div.priceCard.mid{
-    border: 2px solid lightgray;
+div.priceCard.first{
+    h4.price{
+        margin: 1rem 0;
+    }
+    p.price{
+        margin: 2rem 0 0 0;
+    }
+    ul.price{
+        margin: 2rem 0;
+    }
 }
-img.price{
-    display: block;
-    position: absolute;
-    width: 4rem;
-    right: -3.5rem;
-    top: -3.5rem;
+div.priceCard.mid{
+    height: 34rem;
+    margin: 0 0;
+
+    border: 2px solid lightgray;
+    img.price{
+        display: block;
+        position: absolute;
+        width: 4rem;
+        right: -3.5rem;
+        top: -3.5rem;
+    }
+    p.price{
+        margin: 3rem 0;
+    }
+}
+div.priceCard.last{
+    h4.price{
+        margin: 1rem 0;
+    }
+    p.price{
+        margin: 0.2rem 0;
+    }
 }
 h4.price{
     font-size: 1.5rem;
@@ -839,8 +872,11 @@ p.price{
     margin: 2rem 0;
 }
 ul.price{
+    display: inline-block;
+    margin: auto 0;
     list-style: none;
     padding-left: 0;
+    width: auto;
 }
 li.price{
     display: flex;
@@ -851,9 +887,11 @@ span.material-symbols-outlined.price{
     color: black;
 }
 #priceGet,#priceContact{
-    position: static;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
     padding: 0.5rem 2.5rem;
-    /* margin-top: 7rem; */
     border-radius: 2rem;
     border: 2px solid var(--blue3);
     font-weight: 600;
@@ -871,13 +909,23 @@ span.material-symbols-outlined.price{
     color: white;
     background-color: var(--blue2);
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
     section.price{
         width: 95%;
     }
-}
-@media screen and (max-width: 1370px) {
-    div.priceDivs{
-        gap: 3rem;
+    div.priceCard.first{
+        height: 34rem;
     }
+    div.priceCard.mid{
+        height: 37rem;
+    }
+    div.priceCard.last{
+        height: 34rem;
+
+    }
+}
+/* Cases - SECTION */
+h3.cases{
+    margin-top: 140px;
+    font-size: 2rem;    
 }
