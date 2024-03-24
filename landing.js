@@ -1,3 +1,4 @@
+// INTRO
 let intro = document.querySelector('.intro-d')
 let logo = document.querySelector('.intro-h')
 let logoSpan = document.querySelectorAll('.intro-s')
@@ -70,16 +71,12 @@ window.addEventListener('scroll', function() {
   });
 });
 
-
-
-
+// BLUE Headings
 const pElement = document.getElementById('pBlue');
 const anchorElements = document.querySelectorAll('.blueHeadings a');
-
 function updateText(text) {
   pElement.innerHTML = text;
 }
-
 function updateActiveClass(clickedId) {
   anchorElements.forEach(anchor => {
     if (anchor.id === clickedId) {
@@ -89,7 +86,6 @@ function updateActiveClass(clickedId) {
     }
   });
 }
-
 anchorElements.forEach(anchor => {
   anchor.addEventListener('mouseover', function() {
     switch(this.id) {
@@ -110,8 +106,7 @@ anchorElements.forEach(anchor => {
   });
 });
 
-
-
+// Underline blue
 document.querySelectorAll('.blueHeadings a').forEach(link => {
   link.addEventListener('mouseover', function() {
       const underline = document.querySelector('.blueHeadings .underline');

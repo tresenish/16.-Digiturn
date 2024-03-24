@@ -126,6 +126,8 @@ a.nav-link {
     font-weight: 600;
     font-size: 1.2rem;
     color: var(--blue3);
+    transition: background-color 300ms;
+
 }
 #meetWithUs:hover{
     color: white;
@@ -457,9 +459,11 @@ h3.DSF{
 }
 div.blueHeadings{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 5rem;
+    position: relative;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5rem 0 5rem 0;
 }
 h2.DSF{
     margin: 0;
@@ -470,22 +474,12 @@ h2.DSF{
     background-clip: text;
     color: transparent;
 }
-
-/* CSS for anchors and the underline effect */
-
-
-.blueHeadings {
-    display: flex;
-    position: relative;
-}
-
 .blueHeadings a {
+    position: relative;
     text-decoration: none;
     padding: 0;
     cursor: pointer;
-    position: relative;
 }
-
 .underline {
     position: absolute;
     bottom: 0;
@@ -493,8 +487,6 @@ h2.DSF{
     background: linear-gradient(to left, var(--blue6) 0%, var(--blue3) 100%);
     transition: left 0.5s ease, width 0.5s ease;
 }
-
-
 p.DSF{
     font-size: 1.5rem;
     width: 70%;
@@ -547,6 +539,7 @@ li.blacknBlueDiv{
     font-size: 1.2rem;
     color: var(--blue3);
     margin: 0 auto;
+    transition: background-color 300ms;
 }
 #freeConsultation:hover{
     color: white;
@@ -556,15 +549,23 @@ li.blacknBlueDiv{
     color: white;
     background-color: var(--blue2);
 }
+@media screen and (max-width: 1100px) {
+    h2.DSF{
+        font-size: 2rem;
+    }
+}
 @media screen and (max-width: 750px) {
     section.DSF{
         margin: 6rem auto 0 auto;
+        width: 95%;
+
     }
     div.blueHeadings{
-        margin: 3rem;
+        margin: 3rem 0;
     }
     h2.DSF{
-        margin: 0.5rem;
+        font-size: 1.8rem;
+        padding-bottom: 5px;
     }
     p.DSF{
         font-size: 1.5rem;
@@ -572,7 +573,7 @@ li.blacknBlueDiv{
         margin: 0.5rem auto;
     }
     div#blacknBlueDiv{
-        margin: 4rem auto 6rem auto;
+        margin: 4rem auto 4rem auto;
         width: 90%;
         flex-direction: column;
         height: auto;
@@ -582,12 +583,21 @@ li.blacknBlueDiv{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 435px) {
     section.DSF {
         margin: 3rem auto 0 auto;
-        width: 90%;
     }
-    
+    h2.DSF{
+        /* margin: 0.5rem; */
+        font-size: 1.3rem;
+    }
+    div#blacknBlueDiv{
+        margin: 4rem auto 3rem auto;
+    }
+    #blueArrow{
+        width: 5rem;
+        bottom: 4rem;
+    }
 }
 /* Services - SECTION */
 section.services{
@@ -801,40 +811,26 @@ div.priceDivs{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
     margin-top: 3rem;
 }
 div.priceCard{
     position: relative;
     border-radius: 1.5rem;
     width: 30%;
-    min-width: 20rem;
-    height: 33rem;
+    height: auto;
+    height: 25rem;
     transition-duration: 300ms;
 }
-div.priceCard:hover{
+div.priceCard.mid{
     border: 2px solid lightgray;
-    margin-top: -1.5rem;
-    margin-bottom: -1.5rem;
-    height: 36rem;
-
-    h4.price{
-        font-size: 2rem;
-    }
-    p.price{
-        margin: 3rem 0;
-        font-size: 1.3rem;
-    }
-    span.material-symbols-outlined.price{
-        font-size: 1.6rem;
-    }
-    img.price{
-        display: block;
-        position: absolute;
-        width: 5rem;
-        right: -4rem;
-        top: -4rem;
-    }
+}
+img.price{
+    display: block;
+    position: absolute;
+    width: 4rem;
+    right: -3.5rem;
+    top: -3.5rem;
 }
 h4.price{
     font-size: 1.5rem;
@@ -854,15 +850,10 @@ li.price{
 span.material-symbols-outlined.price{
     color: black;
 }
-img.price{
-    display: none;
-}
 #priceGet,#priceContact{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%,-150%);
+    position: static;
     padding: 0.5rem 2.5rem;
+    /* margin-top: 7rem; */
     border-radius: 2rem;
     border: 2px solid var(--blue3);
     font-weight: 600;
@@ -870,6 +861,7 @@ img.price{
     text-decoration: none;
     text-wrap: nowrap;
     color: var(--blue3);
+    transition: background-color 300ms;
 }
 #priceGet:hover,#priceContact:hover{
     color: white;
@@ -886,6 +878,6 @@ img.price{
 }
 @media screen and (max-width: 1370px) {
     div.priceDivs{
-        gap: 5rem;
+        gap: 3rem;
     }
 }
