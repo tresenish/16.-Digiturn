@@ -1,3 +1,33 @@
+let intro = document.querySelector('.intro-d')
+let logo = document.querySelector('.intro-h')
+let logoSpan = document.querySelectorAll('.intro-s')
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  setTimeout(()=>{
+
+    logoSpan.forEach((span, idx)=>{
+      setTimeout(()=>{
+        span.classList.add('active');
+      },(idx + 1) * 300)
+    });
+    
+    setTimeout(() => {
+      logo.classList.add('active');
+      }, 2 * 400);
+    setTimeout(()=>{
+      logoSpan.forEach((span,idx)=>{
+        setTimeout(()=>{
+          span.classList.remove('active');
+          span.classList.add('fade');
+        },0)
+      })
+    },1500);
+    setTimeout(()=>{
+      intro.style.top="-100vh";
+    },1700)
+  })
+})
+
 // SCROLLER
 const scrollers = document.querySelectorAll(".scroller");
 
@@ -61,7 +91,7 @@ function updateActiveClass(clickedId) {
 }
 
 anchorElements.forEach(anchor => {
-  anchor.addEventListener('click', function() {
+  anchor.addEventListener('mouseover', function() {
     switch(this.id) {
       case 'startupsBlue':
         updateText('Empower startups to rapidly build, iterate, and refine products with a focus on user-centered design, enabling them to achieve product-market fit, gain traction, and access early-stage investments.<br><br>We provide startups with the necessary infrastructure, resources,and expertise to accelerate their growth and secure funding.');
@@ -79,3 +109,14 @@ anchorElements.forEach(anchor => {
     updateActiveClass(this.id);
   });
 });
+
+
+
+document.querySelectorAll('.blueHeadings a').forEach(link => {
+  link.addEventListener('mouseover', function() {
+      const underline = document.querySelector('.blueHeadings .underline');
+      underline.style.width = this.offsetWidth + 'px';
+      underline.style.left = this.offsetLeft + 'px';
+  });
+});
+

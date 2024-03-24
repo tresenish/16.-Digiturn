@@ -23,14 +23,58 @@ html{
 *{
     /* border: 1px solid black; */
 }
-    
+/* INTRO */
+div.intro-d {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: top 1000ms;
+}
+h1.intro-h {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    color: var(--blue3);
+    transition: transform 0.5s, color 0.5s;
+}
+
+h1.intro-h.active {
+    transform: translate(-50%, -50%) rotate(0deg);
+    color: #fff;
+}
+
+span.intro-s {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    bottom: -30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+span.intro-s.s2 {
+    margin-left: -8px;
+}
+
+span.intro-s.active {
+    bottom: 0;
+    opacity: 1;
+}
+
+span.intro-s.fade {
+    bottom: 150px;
+    opacity: 0;
+}
 body{
     text-align: center;
     background-image: url(./src/background.webp);
 }
-
 /* NAVIGATION */
-
 nav.nav {
     position: absolute;
     top: 0;
@@ -426,20 +470,31 @@ h2.DSF{
     background-clip: text;
     color: transparent;
 }
-a.DSF{
-    margin: 2rem 2rem;
+
+/* CSS for anchors and the underline effect */
+
+
+.blueHeadings {
+    display: flex;
+    position: relative;
+}
+
+.blueHeadings a {
     text-decoration: none;
     padding: 0;
     cursor: pointer;
+    position: relative;
 }
-a.DSF.active{
-    background-image: linear-gradient(to left, var(--blue6) 0%, var(--blue3) 100%);
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 5px;
-    display: inline-block;
-    padding-bottom: 3px;
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(to left, var(--blue6) 0%, var(--blue3) 100%);
+    transition: left 0.5s ease, width 0.5s ease;
 }
+
+
 p.DSF{
     font-size: 1.5rem;
     width: 70%;
