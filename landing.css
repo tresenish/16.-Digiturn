@@ -71,6 +71,9 @@ span.intro-s.fade {
     opacity: 0;
 }
 body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     text-align: center;
     background-image: url(./src/background.webp);
 }
@@ -941,7 +944,7 @@ span.material-symbols-outlined.price{
 /* Cases - SECTION */
 section.cases{
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 70px auto;
 }
 h3.cases{
     margin-top: 140px;
@@ -1012,3 +1015,72 @@ a.tech-img:hover {
         width: 95%;
     }
 }
+
+/* Black background div */
+#aboutUsMeetWithUs{
+    margin: 0;
+    padding: 01px 0 0 0;
+    width: 100vw;
+    height: 80rem;
+    background: linear-gradient(to right, #000000 0%, #2A2E33 50%, #405066 100%);
+}
+/* About - SECTION */
+
+section.about{
+    text-align: center;
+    width: 100%;
+}
+h3.about{
+    margin: 70px;
+    font-size: 2rem;    
+    color: white;
+}
+p.about{
+    position: relative;
+    margin: 0 auto;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    width: 60%;
+}
+span.about{
+    position: absolute;
+    left: -3rem;
+    top: -3rem;
+    font-family: "League Spartan", sans-serif;
+    font-size: 6rem;
+    color: white;
+}
+/* Meet With Us - SECTION */
+
+section.meetWithUs{
+    
+}
+h3.meetWithUs{
+    margin-top: 140px;
+    font-size: 2rem;    
+    color: white;
+}
+
+
+
+
+
+.map-container {
+    position: relative;
+    width: 60%;
+    height: 500px;
+    margin: 2rem auto;
+    /* background: #000; */
+    overflow: hidden;
+  }
+  .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s ease-out;
+    pointer-events: none; /* Makes sure the mouse event isn't blocked by dots */
+  }

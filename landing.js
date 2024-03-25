@@ -115,3 +115,36 @@ document.querySelectorAll('.blueHeadings a').forEach(link => {
   });
 });
 
+
+
+
+
+// MAP
+
+const container = document.querySelector('.map-container');
+const dots = [];
+
+for (let i = 0; i < 1000; i++) { // Adjust the number of dots as needed
+  const dot = document.createElement('div');
+  dot.classList.add('dot');
+  dot.style.left = `${Math.random() * 100}%`;
+  dot.style.top = `${Math.random() * 100}%`;
+  container.appendChild(dot);
+  dots.push(dot);
+}
+
+container.addEventListener('mousemove', (e) => {
+  const { offsetX, offsetY } = e;
+  dots.forEach(dot => {
+    const dotX = dot.offsetLeft + dot.clientWidth / 2;
+    const dotY = dot.offsetTop + dot.clientHeight / 2;
+    const distance = Math.sqrt(Math.pow(dotX - offsetX, 2) + Math.pow(dotY - offsetY, 2));
+    
+    if (distance < 80) {
+      const angle = Math.atan2(dotY - offsetY, dotX - offsetX);
+      dot.style.transform = `translate(${20 * Math.cos(angle)}px, ${20 * Math.sin(angle)}px)`;
+    } else {
+      dot.style.transform = 'translate(0, 0)';
+    }
+  });
+});
