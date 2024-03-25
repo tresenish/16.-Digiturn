@@ -826,7 +826,7 @@ div.priceCard{
     border-radius: 1.5rem;
     width: 25%;
     min-width: 150px;
-    height: 31rem;
+    height: 28rem;
     margin: 1.5rem 0;
     transition-duration: 300ms;
 }
@@ -842,9 +842,8 @@ div.priceCard.first{
     }
 }
 div.priceCard.mid{
-    height: 34rem;
+    height: 31rem;
     margin: 0 0;
-
     border: 2px solid lightgray;
     img.price{
         display: block;
@@ -909,23 +908,107 @@ span.material-symbols-outlined.price{
     color: white;
     background-color: var(--blue2);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     section.price{
         width: 95%;
     }
     div.priceCard.first{
-        height: 34rem;
+        height: 30rem;
     }
     div.priceCard.mid{
-        height: 37rem;
+        height: 32rem;
     }
     div.priceCard.last{
-        height: 34rem;
+        height: 30rem;
+
+    }
+}
+@media screen and (max-width: 700px) {
+    section.price{
+        width: 99%;
+    }
+    div.priceCard.first{
+        height: 31rem;
+    }
+    div.priceCard.mid{
+        height: 33rem;
+    }
+    div.priceCard.last{
+        height: 31rem;
 
     }
 }
 /* Cases - SECTION */
+section.cases{
+    width: 80%;
+    margin: 0 auto;
+}
 h3.cases{
     margin-top: 140px;
     font-size: 2rem;    
+}
+div.cases.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+h4.cases{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+div.cases.card{
+    position: relative;
+    width: 30%;
+    min-width: 350px;
+    height: 30rem;
+    border: 2px solid lightgray;
+    border-radius: 1.5rem;
+}
+img.device{
+    height: 10rem;
+    margin: 2rem 0;
+    width: auto;
+}
+div.tech-img{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+
+}
+img.tech-img{
+    height: auto;
+    width: 20%;
+}
+a.tech-img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 2rem 0;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, var(--blue3) 0%, var(--light-pink) 100%);
+
+    background-size: 200% 100%;
+    background-position: 0%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    transition: background-position 400ms ease-in-out;
+}
+
+a.tech-img:hover {
+    background-position: 100%;
+}
+@media screen and (max-width: 1000px) {
+    section.cases{
+        width: 95%;
+    }
 }
