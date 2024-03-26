@@ -372,6 +372,7 @@ section.section3x {
     width: 100%;
     aspect-ratio: 1/1;
     transition: transform 0.2s ease;
+    /* transform 0.2s ease-out */
 }
 h1.section3x {
     position: absolute;
@@ -1021,14 +1022,15 @@ a.tech-img:hover {
     margin: 0;
     padding: 01px 0 0 0;
     width: 100vw;
-    height: 80rem;
+    /* height: 80rem; */
     background: linear-gradient(to right, #000000 0%, #2A2E33 50%, #405066 100%);
 }
 /* About - SECTION */
 
 section.about{
     text-align: center;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
 }
 h3.about{
     margin: 70px;
@@ -1052,6 +1054,15 @@ span.about{
     font-size: 6rem;
     color: white;
 }
+div.map-container{
+    width: 70%;
+    margin: 0 auto;
+}
+img.map-container{
+    width: 100%;
+    height: auto;
+}
+
 /* Meet With Us - SECTION */
 
 section.meetWithUs{
@@ -1063,24 +1074,3 @@ h3.meetWithUs{
     color: white;
 }
 
-
-
-
-
-.map-container {
-    position: relative;
-    width: 60%;
-    height: 500px;
-    margin: 2rem auto;
-    /* background: #000; */
-    overflow: hidden;
-  }
-  .dot {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: #fff;
-    border-radius: 50%;
-    transition: transform 0.2s ease-out;
-    pointer-events: none; /* Makes sure the mouse event isn't blocked by dots */
-  }
