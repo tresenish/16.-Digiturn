@@ -592,7 +592,7 @@ li.blacknBlueDiv{
     }
     p.DSF{
         width: 90%;
-        height: 8rem;
+        height: 10rem;
         margin: 0.5rem auto;
     }
     div#blacknBlueDiv{
@@ -606,13 +606,17 @@ li.blacknBlueDiv{
     }
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 465px) {
     section.DSF {
         margin: 3rem auto 0 auto;
     }
     h2.DSF{
         /* margin: 0.5rem; */
         font-size: 1.3rem;
+    }
+    p.DSF{
+        width: 95%;
+        height: 14rem;
     }
     div#blacknBlueDiv{
         margin: 4rem auto 3rem auto;
