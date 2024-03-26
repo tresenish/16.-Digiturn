@@ -25,6 +25,21 @@ html{
 *{
     /* border: 1px solid black; */
 }
+::-webkit-scrollbar {
+    width: 13px;
+    background-color: #fc0000;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--blue5);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #d9d9d9;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue2);
+}
+
 /* INTRO */
 div.intro-d {
     position: fixed;
@@ -916,6 +931,29 @@ li.price{
 span.material-symbols-outlined.price{
     color: black;
 }
+
+#priceGetMid{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-wrap: nowrap;
+    color: white;
+
+    background: linear-gradient(96.05deg, var(--blue6) 0%, var(--blue3) 50%, #FFBBB7 95.86%);
+    background-size: 210% 100%;
+    background-position: 0%;
+    transition: background-position 400ms;
+}
+#priceGetMid:hover{
+    background-position: 100%;
+}
+
 #priceGet,#priceContact{
     position: absolute;
     bottom: 0;
@@ -1128,7 +1166,7 @@ a.calc-button{
     transform: translate(-50%);
     text-decoration: 0;
     color: white;
-    background: linear-gradient(96.05deg, #2569C8 33.39%, #3581FA 70.35%, #FFBBB7 105.86%);
+    background: linear-gradient(96.05deg, var(--blue6) 0%, var(--blue3) 50%, #FFBBB7 95.86%);
     background-size: 200% 100%;
     background-position: 0%;
     padding: 1rem 2rem;
@@ -1137,7 +1175,6 @@ a.calc-button{
 }
 a.calc-button:hover{
     background-position: 100%;
-
 
 }
 @media screen and (max-width: 960px) {
@@ -1158,6 +1195,7 @@ div.left.footer{
     flex-direction: column;
 }
 div.right.footer{
+    position: relative;
     width: 50%;
     display: flex;
 }
@@ -1192,6 +1230,26 @@ h3.listLeft, h3.listRight{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+a.arrow-top{
+    position: absolute;
+    top: 40%;
+    right: 1rem;
+    background-color: #000000;
+    width: 1.5rem;
+    border-radius: 3rem;
+    display: flex;
+    text-decoration: none;
+}
+span.arrow-top{
+    color: white;
+    font-weight: 200;
+}
+@media screen and (max-width: 1000px) {
+    a.arrow-top{
+        top: 100%;
+        width: 2rem;
+    }
 }
 h4.address{
     width: 80%;
