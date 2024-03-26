@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="landing.css">
-        <link rel="icon" type="image/x-icon" href="/src/icon.png">
+        <link rel="icon" type="image/x-icon" href="/src/icon.svg">
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +47,7 @@
 
         <!-- Launching Digital Products Fast - SECTION -->
         <section class="LDPF">
-            <h1 class="LDPF">Launching Digital Products Fast</h1>
+            <h1 class="LDPF">Launching Digital Products <span id="span-fast">Fast <img id="img-fast" src="./src/fast.png" alt=""></span></h1>
             <h2 class="LDPF">Building disruptive applications with low & no-code technology</h2>
             <h3 class="LDPF"><span class="LDPF">NEW</span> Integrating AI</h3>
 
@@ -319,7 +319,7 @@
         <div id="aboutUsMeetWithUs">
             <!-- Cases - SECTION -->
             <section class="about" id="idAbout">
-                <h3 class="about">About</h3>
+                <h3 class="about">About Us</h3>
                 <p class="about"><span class="about">“</span>Our core mission is to empower innovative companies,
                     startups, and businesses to disrupt the market faster by accelerating
                     product launch.</p>
@@ -348,7 +348,7 @@
             <section class="meetWithUs" id="idMeetWithUs">
                 
                 <h3 class="meetWithUs">Meet With Us</h3>
-                <div style="width:100%;height:auto;margin:0 auto;overflow:noscroll" id="my-cal-inline"></div>
+                <div style="width:100%;height:auto;margin:0 auto; padding: 0 0 60px 0;overflow:noscroll" id="my-cal-inline"></div>
                 <script type="text/javascript">
                     (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
                     Cal("init",  {origin:"https://cal.com"});
@@ -361,6 +361,7 @@
 
                     Cal("ui", {"styles":{"branding":{"brandColor":"#2A2E33"}},"hideEventTypeDetails":false,"layout":"month_view"});
                 </script>
+                <a class="calc-button" href="#">Launch your idea</a>
             </section>
         </div>
 
@@ -391,7 +392,10 @@
             <div class="footerBottom">
                 <h4 class="footerBottom">© 2024 | digiturn.io</h4>
                 <h4 class="footerBottom">Turn your ideas into digital products with digiturn</h4>
-                <h4 class="footerBottom">icons icons</h4>
+                <h4 class="footerBottom">
+                    <a href=""><img class="soc-net" src="./src/telegram-icon.png" alt=""></a>
+                    <a href=""><img class="soc-net" src="./src/twitter.jpg" alt=""></a>
+                </h4>
             </div>
         </footer>
         <script src="./landing.js" defer></script> 

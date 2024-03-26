@@ -240,6 +240,15 @@ h1.LDPF{
     margin-top: 7rem;
     margin-bottom: 6rem;
 }
+span#span-fast{
+    position: relative;
+}
+img#img-fast{
+    position: absolute;
+    left: -1rem;
+    width: 15rem;
+    bottom: 0;
+}
 h2.LDPF{
     font-size: 3rem;
     font-weight: 500;
@@ -271,6 +280,10 @@ span.LDPF {
 @media screen and (max-width: 600px) {
     h1.LDPF{
         font-size: 5rem;
+    }
+    img#img-fast{
+        left: 0rem;
+        width: 10rem;
     }
     h2.LDPF{
         font-size: 2rem;
@@ -374,8 +387,7 @@ section.section3x {
     top: 50%;
     width: 100%;
     aspect-ratio: 1/1;
-    transition: transform 0.2s ease;
-    /* transform 0.2s ease-out */
+    transition: transform 0.2s ease-out;
 }
 h1.section3x {
     position: absolute;
@@ -464,7 +476,7 @@ section.DSF{
 h3.DSF{
     font-size: 2rem;
     margin-top: 140px;
-
+    font-weight: 600;
 }
 div.blueHeadings{
     display: flex;
@@ -498,7 +510,9 @@ h2.DSF{
 }
 p.DSF{
     font-size: 1.5rem;
+    font-weight: 400;
     width: 70%;
+    height: 5rem;
     margin: 1rem auto;
 }
 div#blacknBlueDiv{
@@ -577,8 +591,8 @@ li.blacknBlueDiv{
         padding-bottom: 5px;
     }
     p.DSF{
-        font-size: 1.5rem;
         width: 90%;
+        height: 8rem;
         margin: 0.5rem auto;
     }
     div#blacknBlueDiv{
@@ -617,7 +631,7 @@ section.services{
 h3.services{
     font-size: 2rem;
     margin-top: 140px;
-
+    font-weight: 600;
 }
 #servicesGrid{
     display: grid;
@@ -728,7 +742,7 @@ section.HIBP{
 h3.HIBP{
     font-size: 2rem;
     margin-top: 140px;
-
+    font-weight: 600;
 }
 div#flexHIBP{
     display: grid;
@@ -820,6 +834,7 @@ section.price{
 h3.price{
     margin-top: 140px;
     font-size: 2rem;
+    font-weight: 600;
 }
 div.priceDivs{
     display: flex;
@@ -831,14 +846,15 @@ div.priceDivs{
 div.priceCard{
     position: relative;
     border-radius: 1.5rem;
-    width: 25%;
     min-width: 150px;
     height: 28rem;
     margin: 1.5rem 0;
     transition-duration: 300ms;
 }
 div.priceCard.first{
+    width: 25%;
     h4.price{
+        font-weight: 400;
         margin: 1rem 0;
     }
     p.price{
@@ -850,6 +866,7 @@ div.priceCard.first{
 }
 div.priceCard.mid{
     height: 31rem;
+    width: 35%;
     margin: 0 0;
     border: 2px solid lightgray;
     img.price{
@@ -864,7 +881,9 @@ div.priceCard.mid{
     }
 }
 div.priceCard.last{
+    width: 25%;
     h4.price{
+        font-weight: 400;
         margin: 1rem 0;
     }
     p.price{
@@ -887,6 +906,7 @@ ul.price{
 li.price{
     display: flex;
     align-items: center;
+    text-align: left;
     margin: 1rem;
 }
 span.material-symbols-outlined.price{
@@ -953,6 +973,7 @@ section.cases{
 h3.cases{
     margin-top: 140px;
     font-size: 2rem;    
+    font-weight: 600;
 }
 div.cases.cards{
     display: flex;
@@ -1038,6 +1059,8 @@ section.about{
 h3.about{
     margin: 70px;
     font-size: 2rem;    
+    font-weight: 600;
+
     color: white;
 }
 p.about{
@@ -1081,14 +1104,39 @@ img.map-container{
 }
 /* Meet With Us - SECTION */
 section.meetWithUs{
+    position: relative;
     text-align: center;
     margin: 0 auto;
     width: 80%;
 }
 h3.meetWithUs{
-    margin-top: 140px 70px 70px 70px;
+    margin-top: 10px 70px 70px 70px;
     font-size: 2rem;    
+    font-weight: 600;
     color: white;
+}
+a.calc-button{
+    position: absolute;
+    bottom: 80px;
+    transform: translate(-50%);
+    text-decoration: 0;
+    color: white;
+    background: linear-gradient(96.05deg, #2569C8 33.39%, #3581FA 70.35%, #FFBBB7 105.86%);
+    background-size: 200% 100%;
+    background-position: 0%;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    transition: background-position 400ms;
+}
+a.calc-button:hover{
+    background-position: 100%;
+
+
+}
+@media screen and (max-width: 960px) {
+    a.calc-button{
+        bottom: 10px;
+    }
 }
 /* Footer */
 .footerAll{
@@ -1162,6 +1210,11 @@ h4.footerBottom{
     margin: 0;
     font-weight: 300;
     font-size: 1rem;
+}
+.soc-net{
+    width: 1rem;
+    margin: 0 0.5rem;
+    height: auto;
 }
 @media screen and (max-width: 600px) {
     section.about{
