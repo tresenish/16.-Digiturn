@@ -525,9 +525,10 @@ h2.DSF{
 }
 p.DSF{
     font-size: 1.5rem;
+    line-height: 1.1;
     font-weight: 300;
-    width: 70%;
-    height: 5rem;
+    width: 78%;
+    height: 4rem;
     margin: 1rem auto;
 }
 div#blacknBlueDiv{
