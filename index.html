@@ -344,14 +344,11 @@
                     <div class="dot-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
                 </div> -->
             </section>
-
-
-
             <!-- Meet with us - Section -->
             <section class="meetWithUs" id="idMeetWithUs">
                 
                 <h3 class="meetWithUs">Meet With Us</h3>
-                <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
+                <div style="width:100%;height:auto;margin:0 auto;overflow:noscroll" id="my-cal-inline"></div>
                 <script type="text/javascript">
                     (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
                     Cal("init",  {origin:"https://cal.com"});
@@ -367,6 +364,36 @@
             </section>
         </div>
 
+        <footer>
+            <div class="footerAll">
+                <div class="left footer">
+                    <h2 class="left footer">digiturn</h2>
+                    <h3 class="left footer">digital product agency</h3>
+                </div>
+                <div class="right footer">
+                    <ul class="listLeft">
+                        <li class="listLeft"><h3 class="listLeft">About</h3></li>
+                        <li class="listLeft">Our team</li>
+                        <li class="listLeft">Locations</li>
+                        <li class="listLeft">Imprint</li>
+                    </ul>
+                    <ul class="listRight">
+                        <li class="listRight"><h3 class="listRight">Contact</h3></li>
+                        <li class="listRight">hello@digiturn.io</li>
+                        <li class="listRight">Share your idea</li>
+                        <li class="listRight">Social media</li>
+                    </ul>
+                </div>
+            </div>
+            <h4 class="address">Poland, Grzybowska 60, 00-844 Warsaw</h4>
+            <hr class="line">
+
+            <div class="footerBottom">
+                <h4 class="footerBottom">© 2024 | digiturn.io</h4>
+                <h4 class="footerBottom">Turn your ideas into digital products with digiturn</h4>
+                <h4 class="footerBottom">icons icons</h4>
+            </div>
+        </footer>
         <script src="./landing.js" defer></script> 
     </body>
 </html>
