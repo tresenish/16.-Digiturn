@@ -88,8 +88,8 @@ span.intro-s.fade {
     opacity: 0;
 }
 body{
-    margin: 0 1rem 0 1rem;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 1rem 0 1rem;
     overflow-x: hidden;
     text-align: center;
     background-image: url(./src/background.webp);
@@ -1087,10 +1087,10 @@ a.tech-img:hover {
 
 /* Black background div */
 #aboutUsMeetWithUs{
-    margin: 0 auto 0 auto;
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
     padding: 1px 0 0 0;
-    width: 100vw;
-    /* height: 80rem; */
+    width: calc(100vw + 2rem); /* Adjusting the width to cover the full viewport plus the margins */
     background: linear-gradient(to right, #000000 0%, #2A2E33 50%, #405066 100%);
 }
 /* About - SECTION */
