@@ -565,7 +565,7 @@ li.blacknBlueDiv{
 }
 #blueArrow{
     position: absolute;
-    bottom: 5rem;
+    bottom: 4.3rem;
     width: 7rem;
     height: auto;
     transform: translate(-110%,90%);
@@ -639,7 +639,7 @@ li.blacknBlueDiv{
     }
     #blueArrow{
         width: 5rem;
-        bottom: 4rem;
+        bottom: 3.5rem;
     }
 }
 /* Services - SECTION */
@@ -1096,6 +1096,9 @@ a.tech-img:hover {
     section.cases{
         width: 95%;
     }
+    div.cases.card{
+        min-width: 290px;
+    }
 }
 
 /* Black background div */
@@ -1170,10 +1173,6 @@ img.map-container{
     fill: red; /* Changes the dot color to red on hover */
     cursor: pointer; /* Changes the cursor to a pointer to indicate interactivity */
 }
-
-
-
-
 
 /* Meet With Us - SECTION */
 section.meetWithUs{
