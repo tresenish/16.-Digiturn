@@ -860,7 +860,7 @@ div.priceDivs{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 0;
+    gap: 2rem;
     margin-top: 3rem;
 }
 div.priceCard{
@@ -873,6 +873,8 @@ div.priceCard{
 }
 div.priceCard.first{
     width: 25%;
+    height: 29rem;c
+
     h4.price{
         font-weight: 400;
         margin: 1rem 0;
@@ -902,6 +904,8 @@ div.priceCard.mid{
 }
 div.priceCard.last{
     width: 25%;
+    height: 29rem;
+
     h4.price{
         font-weight: 400;
         margin: 1rem 0;
@@ -983,21 +987,6 @@ span.material-symbols-outlined.price{
         width: 95%;
     }
     div.priceCard.first{
-        height: 30rem;
-    }
-    div.priceCard.mid{
-        height: 32rem;
-    }
-    div.priceCard.last{
-        height: 30rem;
-
-    }
-}
-@media screen and (max-width: 700px) {
-    section.price{
-        width: 99%;
-    }
-    div.priceCard.first{
         height: 31rem;
     }
     div.priceCard.mid{
@@ -1005,7 +994,31 @@ span.material-symbols-outlined.price{
     }
     div.priceCard.last{
         height: 31rem;
-
+    }
+}
+@media screen and (max-width: 700px) {
+    section.price{
+        width: 85%;
+    }
+    div.priceDivs{
+        display: block;
+        margin-top: 3rem;
+    }
+    div.priceCard.first{
+        height: 32rem;
+        width: 100%;
+    }
+    div.priceCard.mid{
+        height: 34rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    div.priceCard.last{
+        height: 34rem;
+        width: 100%;
+        p.price{
+            margin: 1.5rem;
+        }
     }
 }
 /* Cases - SECTION */
